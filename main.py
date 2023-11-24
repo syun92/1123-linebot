@@ -3,7 +3,7 @@ from flask import Flask, request, abort
 from pyowm.owm import OWM
 from pyowm.utils import formatting
 from pyowm.utils.config import get_default_config
-import datetime, os, uvicorn
+import datetime, os
 from linebot import LineBotApi, WebhookHandler
 from linebot.v3.messaging import TextMessage
 from linebot.exceptions import InvalidSignatureError
@@ -133,4 +133,4 @@ def handle_message(event):
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=10000)
+    app.run()
