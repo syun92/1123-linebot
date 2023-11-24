@@ -1,3 +1,3 @@
 ﻿Flask
-line-bot-sdk==3.5.0
-pyowm==3.3.0
+line-bot-sdk
+pyowm
